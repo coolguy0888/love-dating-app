@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a4a4a"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/loveLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        app:srcCompat="@drawable/lovelogo"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/enterUsername"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="278dp"
+        android:ems="10"
+        android:hint="Enter Username"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:background="@android:color/background_light"
+        />
+
+
+    <EditText
+        android:id="@+id/enterPassword"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="272dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="162dp"
+        android:background="#92CBC5"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="103dp"
+        android:background="#707070" />
+
+    <Button
+        android:id="@+id/tinySignUpButton"
+        android:layout_width="69dp"
+        android:layout_height="21dp"
+        android:layout_alignEnd="@+id/enterUsername"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="74dp"
+        android:background="@android:color/transparent"
+        android:onClick="clickSignUpScreenActivity"
+        android:text="SIGN UP"
+        android:textColor="#5DD5C8"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_alignTop="@+id/tinySignUpButton"
+        android:layout_toStartOf="@+id/tinySignUpButton"
+        android:text="Don’t Have An Account?"
+        android:textColor="#92CBC5"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/forgetPassword"
+        android:layout_width="115dp"
+        android:layout_height="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="246dp"
+        android:background="@android:color/transparent"
+        android:onClick="clickForgetPassword"
+        android:text="Forget Password?"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textColor="#92CBC5" />
+
+
+</RelativeLayout>
